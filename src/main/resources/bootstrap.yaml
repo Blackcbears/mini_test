@@ -1,0 +1,21 @@
+
+spring:
+  application:
+    name: nacos-provider
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos.gitcui.cn:8848
+        group: GoldConfig
+        namespace: e0626648-6847-4fc0-9986-89bcb1bdadae
+      config:
+        prefix: Mini
+        server-addr: nacos.gitcui.cn:8848
+        file-extension: yaml
+        namespace: e0626648-6847-4fc0-9986-89bcb1bdadae
+        group: Mini
+
+server:
+  port: 8044
